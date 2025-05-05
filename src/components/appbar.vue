@@ -56,18 +56,17 @@ onMounted(() => {
 })
 // 定义导航链接列表
 const navLinks = [
-    { title: 'PeeringDB', icon: 'mdi-database', url: 'https://www.peeringdb.com' },
-    { title: 'BGP.Tools', icon: 'mdi-tools', url: 'https://bgp.tools' },
-    { title: 'Looking Glass', icon: 'mdi-magnify', url: '#' },
-    { title: 'BGP Communities', icon: 'mdi-tag-multiple', url: '#/communities' }
+    { title: 'PeeringDB', icon: 'mdi-database', url: 'https://www.peeringdb.com/net/39131' },
+    { title: 'BGP.Tools', icon: 'mdi-tools', url: 'https://bgp.tools/as/210176' },
+    { title: 'Looking Glass', icon: 'mdi-magnify', url: 'https://lg.abnet.work' },
 ]
 </script>
 
 <template>
     <v-app-bar flat color="background" class="px-4 app-bar-with-border">
         <v-app-bar-title>
-            <span class="font-weight-bold primary--text">LoliNya Network</span>
-            <span class="text-subtitle-1 ml-2 text-medium-emphasis">AS114514</span>
+            <span class="font-weight-bold primary--text">AppleBlock Network</span>
+            <span class="text-subtitle-1 ml-2 text-medium-emphasis">AS210176</span>
         </v-app-bar-title>
 
         <v-spacer />

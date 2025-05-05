@@ -6,10 +6,9 @@ defineOptions({
 })
 
 const showIpv6Blocks = ref(false)
-const ipv6BlockCount = ref(2)
+const ipv6BlockCount = ref(1)
 const ipv6Blocks = ref([
-    { prefix: '2400:cb00::/32', usage: "I don't know what this is used for" },
-    { prefix: '2606:4700::/32', usage: "I also don't know what this is used for" }
+    { prefix: '2a14:67c1:a100::/44', usage: "Primary Use Address" }
 ])
 </script>
 
@@ -31,7 +30,7 @@ const ipv6Blocks = ref([
                         >
                         ASN
                     </div>
-                    <div class="info-value">888888</div>
+                    <div class="info-value">210176</div>
                 </div>
 
                 <div class="info-item">
@@ -85,7 +84,7 @@ const ipv6Blocks = ref([
                         >
                         Operating Since
                     </div>
-                    <div class="info-value">2024 to Present</div>
+                    <div class="info-value">2025 to Present</div>
                 </div>
 
                 <div class="info-item">
@@ -95,7 +94,7 @@ const ipv6Blocks = ref([
                         >
                         PeeringDB
                     </div>
-                    <div class="info-value">net.peeringdb.com/AS114514</div>
+                    <div class="info-value">www.peeringdb.com/net/39131</div>
                 </div>
 
                 <v-divider />
@@ -107,7 +106,7 @@ const ipv6Blocks = ref([
                         >
                         Operator
                     </div>
-                    <div class="info-value">LoliNya Technology Ltd.</div>
+                    <div class="info-value">AppleBlock Team</div>
                 </div>
 
                 <div class="info-item">

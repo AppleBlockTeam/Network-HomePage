@@ -42,7 +42,7 @@ const featureCards = [
         title: 'Professional Operations',
         icon: 'mdi-certificate',
         content:
-            'LoliNya Technology Ltd. provides technical support, committed to delivering stable service for research and education'
+            'AppleBlock Team provides technical support, committed to delivering stable service for research and education'
     }
 ]
 </script>
@@ -52,18 +52,14 @@ const featureCards = [
         <v-row justify="center" class="header-section pa-4">
             <v-col cols="12" md="10" lg="9" xl="8" class="text-center">
                 <div class="d-flex justify-center mb-4">
-                    <img
-                        :src="currentLogo"
-                        alt="LoliNya Network Logo"
-                        class="logo-image"
-                    />
+                    <h1 class="text-h2 font-weight-bold mb-4">AppleBlock Network</h1>
                 </div>
-                <h2 class="text-h5 text-grey-darken-1 mb-4">AS114514</h2>
+                <h2 class="text-h5 text-grey-darken-1 mb-4">AS210176</h2>
                 <div class="text-subtitle-1 text-medium-emphasis mt-4">
                     Research & Education Network
                 </div>
                 <div class="text-caption text-medium-emphasis mt-2 mb-4">
-                    Operated by LoliNya Technology Ltd.
+                    Operated by AppleBlock Team
                 </div>
             </v-col>
         </v-row>
@@ -74,9 +70,9 @@ const featureCards = [
                     <v-card-title> Network Introduction </v-card-title>
                     <v-card-text class="text-body-1">
                         <p>
-                            LoliNya Network (AS114514) is a research and education network
+                            AppleBlock Network (AS210176) is a research and education network
                             focused on IPv6 technology learning and research. Operated by
-                            LoliNya Technology Ltd., we are dedicated to exploring the
+                            AppleBlock Team, we are dedicated to exploring the
                             application and development of next-generation Internet
                             protocol technologies.
                         </p>
@@ -136,111 +132,19 @@ const featureCards = [
 
         <v-row justify="center" class="my-6">
             <v-col cols="12" md="10" lg="8">
-                <v-card elevation="1" class="rounded-lg">
-                    <v-card-title class="text-h5 primary--text">
-                        <v-icon color="primary" class="mr-2">mdi-tag-multiple</v-icon>
-                        BGP Communities
-                    </v-card-title>
-                    <v-card-subtitle class="pb-0">
-                        Below is a list of BGP communities supported by our network for
-                        routing policy control
-                    </v-card-subtitle>
-
-                    <v-table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Community Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>No Export to Peers</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:1000
-                                </td>
-                                <td>
-                                    This prefix will not be announced to any peering
-                                    partners
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Region: Asia</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:2001
-                                </td>
-                                <td>Marks routes from the Asia region</td>
-                            </tr>
-                            <tr>
-                                <td>Region: Europe</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:2002
-                                </td>
-                                <td>Marks routes from the Europe region</td>
-                            </tr>
-                            <tr>
-                                <td>Region: North America</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:2003
-                                </td>
-                                <td>Marks routes from the North America region</td>
-                            </tr>
-                            <tr>
-                                <td>Priority: High</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:3001
-                                </td>
-                                <td>High priority routes</td>
-                            </tr>
-                            <tr>
-                                <td>Priority: Medium</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:3002
-                                </td>
-                                <td>Medium priority routes</td>
-                            </tr>
-                            <tr>
-                                <td>Priority: Low</td>
-                                <td class="text-primary font-weight-medium">
-                                    888888:3003
-                                </td>
-                                <td>Low priority routes</td>
-                            </tr>
-                        </tbody>
-                    </v-table>
-
-                    <v-card-actions>
-                        <v-spacer />
-                        <v-btn
-                            color="primary"
-                            variant="text"
-                            prepend-icon="mdi-download"
-                            href="#"
-                        >
-                            Download Complete Community List
-                        </v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-col>
-        </v-row>
-
-        <v-row justify="center" class="my-6">
-            <v-col cols="12" md="10" lg="8">
                 <v-card color="primary" class="text-center py-4 px-2 rounded-lg">
                     <v-card-title class="text-h4 text-white">Contact Us</v-card-title>
                     <v-card-text>
                         <v-row justify="center" class="mt-2">
                             <v-col cols="12" sm="6" class="d-flex justify-center">
-                                <v-btn variant="tonal" color="white" class="px-4">
+                                <v-btn 
+                                    variant="tonal" 
+                                    color="white" 
+                                    class="px-4"
+                                    href="mailto:team@abnet.work"
+                                >
                                     <v-icon start>mdi-email</v-icon>
-                                    noc@example.com
-                                </v-btn>
-                            </v-col>
-                            <v-col cols="12" sm="6" class="d-flex justify-center">
-                                <v-btn variant="tonal" color="white" class="px-4">
-                                    <v-icon start>mdi-send</v-icon>
-                                    @example
+                                    team@abnet.work
                                 </v-btn>
                             </v-col>
                         </v-row>
@@ -248,7 +152,7 @@ const featureCards = [
                     <v-card-text class="text-white text-body-1">
                         <p>
                             If you have any questions or need more information about
-                            LoliNya Network, please feel free to contact us
+                            AppleBlock Network, please feel free to contact us
                         </p>
                     </v-card-text>
                 </v-card>
@@ -257,11 +161,10 @@ const featureCards = [
 
         <v-footer class="text-center d-block py-4">
             <div class="text-subtitle-2 text-medium-emphasis">
-                © {{ new Date().getFullYear() }} LoliNya Network AS114514
+                © {{ new Date().getFullYear() }} AppleBlock Network AS210176
             </div>
             <div class="text-caption text-medium-emphasis mt-1">
-                LoliNya Network | Research & Education Network | Operated by LoliNya
-                Technology Ltd.
+                AppleBlock Network | Research & Education Network | Operated by AppleBlock Team
             </div>
         </v-footer>
     </v-container>

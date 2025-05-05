@@ -41,7 +41,7 @@ defineOptions({
                         >
                         Peer Requirements
                     </div>
-                    <div class="info-value">Any IXP we are present.</div>
+                    <div class="info-value">Any IXP we are present</div>
                 </div>
 
                 <div class="info-item">
@@ -51,7 +51,7 @@ defineOptions({
                         >
                         Contact Email
                     </div>
-                    <div class="info-value">peering@example.com</div>
+                    <div class="info-value">team@abnet.work</div>
                 </div>
 
                 <div class="info-item">
@@ -79,7 +79,7 @@ defineOptions({
                 </div>
                 <div class="d-flex flex-wrap">
                     <v-chip
-                        v-for="(location, index) in ['Hong Kong', 'Tokyo', 'Los Angeles']"
+                        v-for="(location, index) in ['Tokyo']"
                         :key="index"
                         color="primary"
                         variant="outlined"
