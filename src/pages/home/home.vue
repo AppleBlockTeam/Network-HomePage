@@ -11,13 +11,6 @@ defineOptions({
 
 const theme = useTheme()
 
-// 计算当前应显示的logo
-const currentLogo = computed(() => {
-    return theme.global.current.value.dark
-        ? '/logo/logo.svg'
-        : '/logo/logo_dark.svg'
-})
-
 // 定义各种卡片的内容数据
 const featureCards = [
     {
