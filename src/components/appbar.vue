@@ -14,7 +14,7 @@ const prefersDarkMode = ref(false)
 
 // 切换深色/浅色模式
 const toggleTheme = () => {
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+    theme.global.name.value = theme.global.current.value.dark ? 'lightTheme' : 'darkTheme'
     isDark.value = !isDark.value
 }
 
@@ -31,7 +31,7 @@ const setupDarkModeListener = () => {
     const handleChange = (e: MediaQueryListEvent) => {
         prefersDarkMode.value = e.matches
         // 如果用户没有手动切换过主题，则自动应用系统主题
-        theme.global.name.value = e.matches ? 'dark' : 'light'
+        theme.global.name.value = e.matches ? 'darkTheme' : 'lightTheme'
         isDark.value = e.matches
     }
 
@@ -48,7 +48,7 @@ const setupDarkModeListener = () => {
 onMounted(() => {
     const systemPrefersDark = checkPrefersDarkMode()
     // 设置初始主题为系统首选主题
-    theme.global.name.value = systemPrefersDark ? 'dark' : 'light'
+    theme.global.name.value = systemPrefersDark ? 'darkTheme' : 'lightTheme'
     isDark.value = systemPrefersDark
 
     // 设置系统主题变化的监听器
@@ -68,8 +68,6 @@ const navLinks = [
             <span class="font-weight-bold primary--text">AppleBlock Network</span>
             <span class="text-subtitle-1 ml-2 text-medium-emphasis">AS210176</span>
         </v-app-bar-title>
-
-        <v-spacer />
 
         <!-- 在桌面端显示按钮 -->
         <template v-if="!mobile">
